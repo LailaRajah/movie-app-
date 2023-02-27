@@ -1,0 +1,10 @@
+.cardsContainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content : center;
+    gap: 25px;
+}
+.stars{
+    display:flex;
+    justify-content: space-evenly;
+}
