@@ -2,11 +2,12 @@ import Card from 'react-bootstrap/Card';
 import './MovieCard.css'
 import ReactStars from 'react-stars'
 import React from 'react'
+import { Link } from 'react-router-dom';
 
-function Cards({poster,title,rating}) {
+function Cards({el,poster,title,rating}) {
   return (
-    
-
+    <>
+<Link to={"/list/movie"} state={el}>
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={poster} />
       <Card.Body>
@@ -15,6 +16,7 @@ function Cards({poster,title,rating}) {
         <ReactStars
          className='stars'
             count={5}
+            edit={false}
             value={rating}
             size={24}
             color2={'#ffd700'} 
@@ -22,7 +24,8 @@ function Cards({poster,title,rating}) {
          </Card.Text>
       </Card.Body>
     </Card>
-
+</Link>
+</>
   );
 }
 

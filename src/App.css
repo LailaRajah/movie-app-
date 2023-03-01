@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -35,4 +36,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.details{
+  display : flex;
+  flex-direction:column;  
+  align-items: center;
+  gap:40px;
+  margin-top:30px;
+}
+
+.links{
+  margin-right:30px;
+}
+.carousel img{
+  height:500px;
+}
+.carousel{
+  width:70%;
+
+}
+.caros{
+  display:flex;
+  flex-direction: column;
+    align-items: center;
+    gap:35px;
 }
